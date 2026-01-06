@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  tomcat:
+    image: tomcat:9.0
+    container_name: tomcat-dev
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./myapp.war:/usr/local/tomcat/webapps/myapp.war
